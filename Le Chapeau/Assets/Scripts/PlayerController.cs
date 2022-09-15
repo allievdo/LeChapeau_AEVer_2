@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable
 
             if (Input.GetKeyDown(KeyCode.Space))
                 TryJump();
+                Debug.Log("Try jump");
 
             // track the amount of time we're wearing the hat
             if (hatObject.activeInHierarchy)
