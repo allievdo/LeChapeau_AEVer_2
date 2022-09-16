@@ -52,10 +52,13 @@ public class GameUI : MonoBehaviour
     void UpdatePlayerUI ()
     {
         // loop through all players
-        for(int x = 0; x < playerContainers.Length; ++x)
+        for (int x = 0; x < playerContainers.Length; ++x)
         {
             if (GameManager.instance.players[x] != null)
+            {
                 playerContainers[x].hatTimeSlider.value = GameManager.instance.players[x].curHatTime;
+                Debug.Log("New player");
+            }
         }
     }
 
